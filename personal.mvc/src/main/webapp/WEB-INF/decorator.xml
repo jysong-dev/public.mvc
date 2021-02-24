@@ -7,5 +7,6 @@
     <excludes>
         <pattern>/signup</pattern>
         <pattern>/*_pop</pattern>
+        <pattern>/embed/*</pattern>
     </excludes>
 </decorators>

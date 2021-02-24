@@ -1,11 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/common.jsp"%>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Index</title>
-</head>
-<body>
 	
 	<!-- Page Heading -->
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -331,6 +325,3 @@
 	
 	    </div>
 	</div>
-
-</body>
-</html>

@@ -8,16 +8,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>SB Admin 2 - Dashboard :: <decorator:title /></title></title>
 	<%@ include file="/WEB-INF/views/common/common.jsp"%>
+	<%@ include file="/WEB-INF/views/ksubes/modoo/drag_and_drop_lib.jsp"%>
 	<decorator:head></decorator:head>
 </head>
 
 <body id="page-top">
 
-	<!-- Page Wrapper -->
-	<div id="wrapper">
+	<div id="wrapper"><!-- Page Wrapper -->
 			
 		<!-- Sidebar -->
-		<c:import url="/layout/sidebar.do" charEncoding="utf-8"></c:import>
+		<c:import url="/embed/layout/sidebar.do" charEncoding="utf-8"></c:import>
 	    <!-- End of Sidebar -->
 		
 		<!-- Content Wrapper -->
@@ -27,7 +27,7 @@
 		    <div id="content">
 	
 				<!-- Topbar -->
-				<c:import url="/layout/header.do" charEncoding="utf-8"></c:import>
+				<c:import url="/embed/layout/header.do" charEncoding="utf-8"></c:import>
 			    <!-- End of Topbar -->
 	
 	                <!-- Begin Page Content -->
@@ -40,21 +40,20 @@
 			<!-- End of Main Content -->
 	
 			<!-- Footer -->
-			<c:import url="/layout/footer.do" charEncoding="utf-8"></c:import>
+			<c:import url="/embed/layout/footer.do" charEncoding="utf-8"></c:import>
 			<!-- End of Footer -->
 	
 		</div>
 		<!-- End of Content Wrapper -->
 	
-	</div>
-	<!-- End of Page Wrapper -->
+	</div><!-- End of Page Wrapper -->
 	
 	<!-- Scroll to Top Button-->
 	<a class="scroll-to-top rounded" href="#page-top">
 	    <i class="fas fa-angle-up"></i>
 	</a>
 	
-	<c:import url="/user/logout.do" charEncoding="utf-8"></c:import><!-- Logout Modal-->
+	<c:import url="/embed/user/logout.do" charEncoding="utf-8"></c:import><!-- Logout Modal-->
 
 </body>
 </html>
