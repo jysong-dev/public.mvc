@@ -21,6 +21,8 @@
 	
 	<!-- Custom styles for this template-->
 	<link href="${contextPath}/resources/lib/startbootstrap-sb-admin-2-master/css/sb-admin-2.min.css" rel="stylesheet">
+	
+	<!-- tableDnD -->
 	<link href="${contextPath}/resources/lib/bootstrap-table-master/dist/bootstrap-table.min.css" rel="stylesheet">
 	<link href="${contextPath}/resources/lib/bootstrap-table-master/dist/extensions/reorder-rows/bootstrap-table-reorder-rows.css" rel="stylesheet">
 	<style>
@@ -31,7 +33,8 @@
 		    font-style: normal;
 		}
 		* { font-family: 'Arita-dotum-Medium', sans-serif; }
-		
+		.card-body { font-family: 'Dotum' !important; font-size: 10pt; }
+		table { font-family: 'Dotum' !important; font-size: 10pt; }
 	</style>
 	
 	<!-- Bootstrap core JavaScript-->
@@ -96,6 +99,7 @@
 	<script src="${contextPath}/resources/lib/startbootstrap-sb-admin-2-master/js/demo/chart-area-demo.js"></script>
 	<script src="${contextPath}/resources/lib/startbootstrap-sb-admin-2-master/js/demo/chart-pie-demo.js"></script>
 
+	<!-- tableDnD -->
 	<script src="${contextPath}/resources/lib/TableDnD-master/js/jquery.tablednd.js"></script>
 	<script src="${contextPath}/resources/lib/bootstrap-table-master/dist/bootstrap-table.min.js"></script>
 	<script src="${contextPath}/resources/lib/bootstrap-table-master/dist/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js"></script>  
