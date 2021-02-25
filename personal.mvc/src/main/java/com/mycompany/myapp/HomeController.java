@@ -41,40 +41,47 @@ public class HomeController {
 		return "/layout/footer";
 	}
 	
-	@RequestMapping(value = "/embed/user/logout.do", method = RequestMethod.GET)
-	public String logout() {
-		
-		return "/user/logout";
-	}
-	
-	@RequestMapping(value = "/embed/user/register.do", method = RequestMethod.GET)
-	public String register() {
-		
-		return "/user/register";
-	}
-	
-	@RequestMapping(value = "/embed/user/login.do", method = RequestMethod.GET)
-	public String login() {
-		
-		return "/user/login";
-	}
-	
-	@RequestMapping(value = "/embed/user/forgot_password.do", method = RequestMethod.GET)
-	public String forgotPassword() {
-		
-		return "/user/forgot-password";
-	}
-	
-	@RequestMapping(value = "/pages/page404.do", method = RequestMethod.GET)
-	public String page404() {
-		
-		return "/layout/pages/page404";
-	}
-	
+	/** pages **/
 	@RequestMapping(value = "/pages/blank.do", method = RequestMethod.GET)
 	public String blank() {
 		
 		return "/layout/pages/blank";
+	}
+	
+	@RequestMapping(value = "/pages/invoice.do", method = RequestMethod.GET)
+	public String invoice() {
+		
+		return "/layout/pages/invoice";
+	}
+	
+	@RequestMapping(value = "/pages/profile.do", method = RequestMethod.GET)
+	public String profile() {
+		
+		return "/layout/pages/profile";
+	}
+	
+	@RequestMapping(value = "/pages/settings.do", method = RequestMethod.GET)
+	public String settings() {
+		
+		return "/layout/pages/settings";
+	}
+	
+	@RequestMapping(value = "/embed/pages/signIn.do", method = RequestMethod.GET)
+	public String signIn() {
+		
+		return "/layout/pages/sign_in";
+	}
+	
+	@RequestMapping(value = "/embed/pages/signUp.do", method = RequestMethod.GET)
+	public String signUp() {
+		
+		return "/layout/pages/sign_up";
+	}
+	
+	@RequestMapping(value = "/components/alerts.do", method = RequestMethod.GET)
+	public String alerts() {
+		
+		return "/layout/components/alerts";
 	}
 	
 	@RequestMapping(value = "/components/buttons.do", method = RequestMethod.GET)
@@ -89,64 +96,102 @@ public class HomeController {
 		return "/layout/components/cards";
 	}
 	
-	@RequestMapping(value = "/utilities/animation.do", method = RequestMethod.GET)
-	public String animation() {
+	@RequestMapping(value = "/components/general.do", method = RequestMethod.GET)
+	public String general() {
 		
-		return "/layout/utilities/animation";
+		return "/layout/components/general";
 	}
 	
-	@RequestMapping(value = "/utilities/border.do", method = RequestMethod.GET)
-	public String border() {
+	@RequestMapping(value = "/components/grid.do", method = RequestMethod.GET)
+	public String grid() {
 		
-		return "/layout/utilities/border";
+		return "/layout/components/grid";
 	}
 	
-	@RequestMapping(value = "/utilities/color.do", method = RequestMethod.GET)
-	public String color() {
+	@RequestMapping(value = "/components/modals.do", method = RequestMethod.GET)
+	public String modals() {
 		
-		return "/layout/utilities/color";
+		return "/layout/components/modals";
 	}
 	
-	@RequestMapping(value = "/utilities/other.do", method = RequestMethod.GET)
-	public String other() {
+	@RequestMapping(value = "/components/typography.do", method = RequestMethod.GET)
+	public String typography() {
 		
-		return "/layout/utilities/other";
+		return "/layout/components/typography";
 	}
 	
-	@RequestMapping(value = "/charts.do", method = RequestMethod.GET)
-	public String charts() {
+	@RequestMapping(value = "/components/icons.do", method = RequestMethod.GET)
+	public String icons() {
 		
-		return "/layout/components/charts";
+		return "/layout/components/icons";
 	}
+
+//	@RequestMapping(value = "/embed/user/logout.do", method = RequestMethod.GET)
+//	public String logout() {
+//		
+//		return "/user/logout";
+//	}
+//	
+//	@RequestMapping(value = "/embed/user/register.do", method = RequestMethod.GET)
+//	public String register() {
+//		
+//		return "/user/register";
+//	}
+//	
+//	@RequestMapping(value = "/embed/user/login.do", method = RequestMethod.GET)
+//	public String login() {
+//		
+//		return "/user/login";
+//	}
+//	
+//	@RequestMapping(value = "/embed/user/forgot_password.do", method = RequestMethod.GET)
+//	public String forgotPassword() {
+//		
+//		return "/user/forgot-password";
+//	}
+//	
+//	@RequestMapping(value = "/pages/page404.do", method = RequestMethod.GET)
+//	public String page404() {
+//		
+//		return "/layout/pages/page404";
+//	}
+
 	
-	@RequestMapping(value = "/tables.do", method = RequestMethod.GET)
-	public String tables() {
-		
-		return "/layout/components/tables";
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+//	@RequestMapping(value = "/utilities/animation.do", method = RequestMethod.GET)
+//	public String animation() {
+//		
+//		return "/layout/utilities/animation";
+//	}
+//	
+//	@RequestMapping(value = "/utilities/border.do", method = RequestMethod.GET)
+//	public String border() {
+//		
+//		return "/layout/utilities/border";
+//	}
+//	
+//	@RequestMapping(value = "/utilities/color.do", method = RequestMethod.GET)
+//	public String color() {
+//		
+//		return "/layout/utilities/color";
+//	}
+//	
+//	@RequestMapping(value = "/utilities/other.do", method = RequestMethod.GET)
+//	public String other() {
+//		
+//		return "/layout/utilities/other";
+//	}
+//	
+//	@RequestMapping(value = "/charts.do", method = RequestMethod.GET)
+//	public String charts() {
+//		
+//		return "/layout/components/charts";
+//	}
+//	
+//	@RequestMapping(value = "/tables.do", method = RequestMethod.GET)
+//	public String tables() {
+//		
+//		return "/layout/components/tables";
+//	}
 
 	@RequestMapping(value = "/ksubes/modoo/drag_and_drop.do", method = RequestMethod.GET)
 	public String dragAndDrop() {

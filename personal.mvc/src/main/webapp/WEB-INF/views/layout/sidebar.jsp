@@ -1,143 +1,120 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-	<!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="${contextPath}/layout/main.do">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-    </a>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider my-0">
-
-    <!-- Nav Item - Dashboard -->
-    <li class="nav-item active">
-        <a class="nav-link" href="${contextPath}/layout/main.do">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
-    </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Interface
-    </div>
-
-    <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#none" data-toggle="collapse" data-target="#collapseTwo"
-            aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
-            <span>Components</span>
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle">AdminKit</span>
         </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="${contextPath}/components/buttons.do">Buttons</a>
-                <a class="collapse-item" href="${contextPath}/components/cards.do">Cards</a>
-            </div>
-        </div>
-    </li>
 
-    <!-- Nav Item - Utilities Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#none" data-toggle="collapse" data-target="#collapseUtilities"
-            aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fas fa-fw fa-wrench"></i>
-            <span>Utilities</span>
-        </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-            data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="${contextPath}/utilities/color.do">Colors</a>
-                <a class="collapse-item" href="${contextPath}/utilities/border.do">Borders</a>
-                <a class="collapse-item" href="${contextPath}/utilities/animation.do">Animations</a>
-                <a class="collapse-item" href="${contextPath}/utilities/other.do">Other</a>
-            </div>
-        </div>
-    </li>
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
 
-    <!-- Divider -->
-    <hr class="sidebar-divider">
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					</li>
 
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Demo
-    </div>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="${contextPath}/pages/profile.do">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+            </a>
+					</li>
 
-    <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#none" data-toggle="collapse" data-target="#collapsePages"
-            aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-	            <h6 class="collapse-header">Login Screens:</h6>
-	            <a class="collapse-item" href="${contextPath}/embed/user/login.do">Login</a>
-	            <a class="collapse-item" href="${contextPath}/embed/user/register.do">Register</a>
-	            <a class="collapse-item" href="${contextPath}/embed/user/forgot_password.do">Forgot Password</a>
-	            <div class="collapse-divider"></div>
-	            <h6 class="collapse-header">Other Pages:</h6>
-	            <a class="collapse-item" href="${contextPath}/pages/page404.do">404 Page</a>
-	            <a class="collapse-item" href="${contextPath}/pages/blank.do">Blank Page</a>
-                <div class="collapse-divider"></div>
-                <h6 class="collapse-header">Source Pages:</h6>
-                <a class="collapse-item" href="${contextPath}/ksubes/modoo/drag_and_drop.do">드래그 앤 드롭</a>
-            </div>
-        </div>
-    </li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="${contextPath}/pages/settings.do">
+              <i class="align-middle" data-feather="settings"></i> <span class="align-middle">Settings</span>
+            </a>
+					</li>
 
-    <!-- Nav Item - Charts -->
-    <li class="nav-item">
-        <a class="nav-link" href="${contextPath}/charts.do">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span></a>
-    </li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="${contextPath}/pages/invoice.do">
+              <i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Invoice</span>
+            </a>
+					</li>
 
-    <!-- Nav Item - Tables -->
-    <li class="nav-item">
-        <a class="nav-link" href="${contextPath}/tables.do">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
-    </li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="${contextPath}/pages/blank.do">
+              <i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
+            </a>
+					</li>
 
-    <!-- Divider -->
-    <hr class="sidebar-divider d-none d-md-block">
+					<li class="sidebar-item">
+						<a href="#auth" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="users"></i> <span class="align-middle">Auth</span>
+            </a>
+						<ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="${contextPath}/embed/pages/signIn.do">Sign In</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="${contextPath}/embed/pages/signUp.do">Sign Up</a></li>
+						</ul>
+					</li>
 
-    <!-- Sidebar Toggler (Sidebar) -->
-    <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-    </div>
+					<li class="sidebar-header">
+						Tools & Components
+					</li>
+					<li class="sidebar-item">
+						<a data-target="#ui" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">UI Elements</span>
+            </a>
+						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="${contextPath}/components/alerts.do">Alerts</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="${contextPath}/components/buttons.do">Buttons</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="${contextPath}/components/cards.do">Cards</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="${contextPath}/components/general.do">General</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="${contextPath}/components/grid.do">Grid</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="${contextPath}/components/modals.do">Modals</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="${contextPath}/components/typography.do">Typography</a></li>
+						</ul>
+					</li>
 
-    <!-- Sidebar Message -->
-<!--     <div class="sidebar-card"> -->
-<%--         <img class="sidebar-card-illustration mb-2" src="${contextPath}/resources/lib/startbootstrap-sb-admin-2-master/img/undraw_rocket.svg" alt=""> --%>
-<!--         <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p> -->
-<!--         <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a> -->
-<!--     </div> -->
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="${contextPath}/components/icons.do">
+              <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Icons</span>
+            </a>
+					</li>
 
-</ul>
+					<li class="sidebar-item">
+						<a data-target="#forms" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>
+            </a>
+						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Form Layouts</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a></li>
+						</ul>
+					</li>
 
-<script>
-	(function() {
-		/** menu active **/
-		if($('#accordionSidebar').find('.collapse-item').length > 0) {
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="tables-bootstrap.html">
+              <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>
+            </a>
+					</li>
 
-			//var params = {};
-			//window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) { params[key] = value; });
-			
-			//var $menu = $('[data-menu-id=' + params.menuId +']');
-			//$menu.addClass('active');
-			//var collapseId = $menu.parents('.collapse').attr('id');
-			
-			//$menu.parents('.collapse').collapse('show');
-		}
-	})();
-</script>
+					<li class="sidebar-header">
+						Plugins & Addons
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="charts-chartjs.html">
+              <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Charts</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="maps-google.html">
+              <i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>
+            </a>
+					</li>
+				</ul>
+
+				<div class="sidebar-cta">
+					<div class="sidebar-cta-content">
+						<strong class="d-inline-block mb-2">Upgrade to Pro</strong>
+						<div class="mb-3 text-sm">
+							Are you looking for more components? Check out our premium version.
+						</div>
+						<a href="https://adminkit.io/pricing" target="_blank" class="btn btn-primary btn-block">Upgrade to Pro</a>
+					</div>
+				</div>
+			</div>
+		</nav>
