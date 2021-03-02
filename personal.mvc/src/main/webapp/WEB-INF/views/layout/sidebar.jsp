@@ -79,13 +79,13 @@
               <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>
             </a>
 						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Form Layouts</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="${contextPath}/forms/layouts.do">Form Layouts</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="${contextPath}/forms/basicInputs.do">Basic Inputs</a></li>
 						</ul>
 					</li>
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="tables-bootstrap.html">
+						<a class="sidebar-link" href="${contextPath}/components/tables.do">
               <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>
             </a>
 					</li>
@@ -95,26 +95,26 @@
 					</li>
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="charts-chartjs.html">
+						<a class="sidebar-link" href="${contextPath}/components/charts.do">
               <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Charts</span>
             </a>
 					</li>
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="maps-google.html">
+						<a class="sidebar-link" href="${contextPath}/components/maps.do">
               <i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>
             </a>
 					</li>
 				</ul>
 
-				<div class="sidebar-cta">
-					<div class="sidebar-cta-content">
-						<strong class="d-inline-block mb-2">Upgrade to Pro</strong>
-						<div class="mb-3 text-sm">
-							Are you looking for more components? Check out our premium version.
-						</div>
-						<a href="https://adminkit.io/pricing" target="_blank" class="btn btn-primary btn-block">Upgrade to Pro</a>
-					</div>
-				</div>
+<!-- 				<div class="sidebar-cta"> -->
+<!-- 					<div class="sidebar-cta-content"> -->
+<!-- 						<strong class="d-inline-block mb-2">Upgrade to Pro</strong> -->
+<!-- 						<div class="mb-3 text-sm"> -->
+<!-- 							Are you looking for more components? Check out our premium version. -->
+<!-- 						</div> -->
+<!-- 						<a href="https://adminkit.io/pricing" target="_blank" class="btn btn-primary btn-block">Upgrade to Pro</a> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
 			</div>
 		</nav>

@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class HomeController {
+public class PageController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(PageController.class);
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {
@@ -125,6 +125,36 @@ public class HomeController {
 		
 		return "/layout/components/icons";
 	}
+	
+	@RequestMapping(value = "/forms/basicInputs.do", method = RequestMethod.GET)
+	public String basicInputs() {
+		
+		return "/layout/components/forms/basic_inputs";
+	}
+	
+	@RequestMapping(value = "/forms/layouts.do", method = RequestMethod.GET)
+	public String formLayouts() {
+		
+		return "/layout/components/forms/layouts";
+	}
+	
+	@RequestMapping(value = "/components/tables.do", method = RequestMethod.GET)
+	public String tables() {
+		
+		return "/layout/components/tables";
+	}
+	
+	@RequestMapping(value = "/components/charts.do", method = RequestMethod.GET)
+	public String charts() {
+		
+		return "/layout/components/charts";
+	}
+	
+	@RequestMapping(value = "/components/maps.do", method = RequestMethod.GET)
+	public String maps() {
+		
+		return "/layout/components/maps";
+	}
 
 //	@RequestMapping(value = "/embed/user/logout.do", method = RequestMethod.GET)
 //	public String logout() {
@@ -186,23 +216,19 @@ public class HomeController {
 //		
 //		return "/layout/components/charts";
 //	}
-//	
-//	@RequestMapping(value = "/tables.do", method = RequestMethod.GET)
-//	public String tables() {
-//		
-//		return "/layout/components/tables";
-//	}
-
-	@RequestMapping(value = "/ksubes/modoo/drag_and_drop.do", method = RequestMethod.GET)
-	public String dragAndDrop() {
-		
-		return "/ksubes/modoo/drag_and_drop";
-	}
 	
-	@RequestMapping(value = "/embed/ksubes/modoo/drag_and_drop_source.do", method = RequestMethod.GET)
-	public String dragAndDropSource() {
-		
-		return "/ksubes/modoo/drag_and_drop_source";
-	}
+	
+
+//	@RequestMapping(value = "/ksubes/modoo/drag_and_drop.do", method = RequestMethod.GET)
+//	public String dragAndDrop() {
+//		
+//		return "/ksubes/modoo/drag_and_drop";
+//	}
+//	
+//	@RequestMapping(value = "/embed/ksubes/modoo/drag_and_drop_source.do", method = RequestMethod.GET)
+//	public String dragAndDropSource() {
+//		
+//		return "/ksubes/modoo/drag_and_drop_source";
+//	}
 	
 }
