@@ -19,3 +19,4 @@ personal.mvc/target/classes/log4j.xml
 personal.mvc/target/classes/com/mycompany/myapp/HomeController.class
 personal.mvc/src/test/resources/log4j.xml
 personal.mvc/workspace-spring/personal.mvc/target/m2e-wtp/web-resources/META-INF/maven/com.mycompany/myapp/pom.xml
+personal.mvc/target/classes/com/mycompany/myapp/PageController.class
